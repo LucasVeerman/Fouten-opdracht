@@ -3,7 +3,7 @@ error_reporting(0);
     
 $naam= $_GET['naam'];
 $fouten= $_GET['fouten'];
-$link = '<a href="1e.html">Terug naar formulier</a>';
+$link = '<a href="fouten.html">Terug naar formulier</a>';
 $naam = ucwords(strtolower($naam));
 $norm = $_GET['norm'];
 $cijfer = 10 - $fouten/$norm;
@@ -35,7 +35,7 @@ else if($fouten > 100){
     echo $link;
 }
 else{
-    echo $naam . "<br>" . $fouten . "<br>";
+    echo $naam . "<br> Je hebt " . $fouten . " fouten<br>";
     echo "Je cijfer is " . $cijfer . "<br>";
     echo $link; 
 
